@@ -250,6 +250,11 @@
     .t-list { display: flex; flex-direction: column; }
     .t-item { padding: 12px 25px; font-weight: 600; font-size: 1rem; cursor: pointer; transition: background 0.2s; }
     .t-item:hover { background: rgba(255,255,255,0.05); }
+
+    .t-list::-webkit-scrollbar { width: 4px; }
+    .t-list::-webkit-scrollbar-track { background: transparent; }
+    .t-list::-webkit-scrollbar-thumb { background: #333; border-radius: 4px; }
+    .t-list::-webkit-scrollbar-thumb:hover { background: #555; }
 </style>
 </head>
 <body>
