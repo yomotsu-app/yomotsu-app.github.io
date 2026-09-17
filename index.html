@@ -168,6 +168,42 @@
         opacity: 1;
         transform: translateY(0);
     }
+
+    /* 8K CSS Screens */
+    .css-screen { width: 100%; height: 100%; background: #000; color: #fff; font-family: sans-serif; position: relative; text-align: left; }
+    
+    /* Profile Screen */
+    .profile-screen .p-banner { height: 180px; background: linear-gradient(45deg, #102f31, #2a5a5c); position: relative; overflow: hidden; }
+    .profile-screen .p-banner::after { content: ''; position: absolute; top:0; left:0; width:100%; height:100%; background: radial-gradient(circle, transparent 20%, #000 120%); }
+    .profile-screen .p-avatar { width: 85px; height: 85px; border-radius: 50%; background: #111 linear-gradient(135deg, #cf654b, #2a5a5c); border: 4px solid #000; margin: -42px auto 0; position: relative; z-index: 2; box-shadow: 0 0 20px rgba(0,0,0,0.8); }
+    .profile-screen .p-info { padding: 15px 20px; text-align: center; }
+    .profile-screen h3 { margin: 10px 0 5px; font-size: 1.3rem; font-weight: 700; letter-spacing: 0.5px; }
+    .profile-screen .p-title { color: #cf654b; font-size: 0.85rem; font-weight: 700; margin-bottom: 30px; text-shadow: 0 0 10px rgba(207,101,75,0.4); }
+    .p-level-text { display: flex; justify-content: space-between; font-size: 0.75rem; font-weight: 700; color: #666; margin-bottom: 8px; }
+    .p-level-text span:first-child { color: #66ba91; }
+    .p-bar-track { height: 6px; background: #1a1d1e; border-radius: 10px; overflow: hidden; margin-bottom: 8px; }
+    .p-bar-fill { height: 100%; width: 95%; background: #cf654b; border-radius: 10px; box-shadow: 0 0 10px rgba(207,101,75,0.8); }
+    .p-xp { font-size: 0.7rem; color: #555; margin-bottom: 35px; }
+    .p-stats { display: flex; gap: 15px; justify-content: center; }
+    .p-stat { background: #0a0c0d; padding: 20px 10px; border-radius: 16px; flex: 1; display: flex; flex-direction: column; gap: 8px; border: 1px solid #1a1d1e; }
+    .p-stat strong { font-size: 1.3rem; }
+    .p-stat small { font-size: 0.7rem; color: #777; }
+
+    /* Achievements Screen */
+    .ach-screen { padding: 30px 20px; background: #000; }
+    .a-header { font-weight: 700; font-size: 1.2rem; margin-bottom: 25px; color: #f6eee3; }
+    .a-list { display: flex; flex-direction: column; gap: 14px; }
+    .a-item { border: 1px solid #1a1d1e; border-radius: 14px; padding: 18px; display: flex; align-items: center; gap: 16px; background: #0a0c0d; transition: transform 0.3s ease; }
+    .a-item:hover { transform: scale(1.03); }
+    .a-icon { font-size: 1.6rem; filter: drop-shadow(0 0 5px rgba(255,255,255,0.2)); }
+    .a-text { display: flex; flex-direction: column; gap: 4px; }
+    .a-text strong { font-size: 0.95rem; letter-spacing: 0.3px; }
+    .a-text small { font-size: 0.75rem; color: #777; }
+    .a-item.gold { border-color: rgba(255, 215, 0, 0.4); background: linear-gradient(90deg, rgba(255, 215, 0, 0.1), transparent); }
+    .a-item.gold strong { color: #ffd700; text-shadow: 0 0 10px rgba(255, 215, 0, 0.3); }
+    .a-item.bronze { border-color: rgba(205, 127, 50, 0.4); background: linear-gradient(90deg, rgba(205, 127, 50, 0.1), transparent); }
+    .a-item.bronze strong { color: #cd7f32; }
+    .a-item.locked { border-color: #111; opacity: 0.4; }
 </style>
 </head>
 <body>
@@ -192,13 +228,59 @@
         <div class="carousel-track">
           <div class="carousel-item">
             <div class="phone-frame">
-              <img src="assets/profile.jpg" alt="Perfil Yomotsu">
+              
+            <div class="css-screen profile-screen">
+              <div class="p-header">
+                <div class="p-banner"></div>
+                <div class="p-avatar"></div>
+              </div>
+              <div class="p-info">
+                <h3>Kiritsuguxs <small style="color:#555">✎</small></h3>
+                <p class="p-title">Formação do Núcleo</p>
+                <div class="p-level-bar">
+                  <div class="p-level-text"><span>Nível 105</span><span>Nível 106</span></div>
+                  <div class="p-bar-track"><div class="p-bar-fill"></div></div>
+                  <div class="p-xp">1371330 / 1378125 XP</div>
+                </div>
+                <div class="p-stats">
+                  <div class="p-stat"><strong>15237</strong><small>Lidos</small></div>
+                  <div class="p-stat"><strong>260</strong><small>Na Biblioteca</small></div>
+                </div>
+              </div>
+            </div>
+
             </div>
             <p>Perfil Gamificado (Nível e Banner)</p>
           </div>
           <div class="carousel-item">
             <div class="phone-frame">
-              <img src="assets/achievements.jpg" alt="Conquistas Yomotsu">
+              
+            <div class="css-screen ach-screen">
+              <div class="a-header">Sala de Troféus (30/100)</div>
+              <div class="a-list">
+                <div class="a-item gold">
+                  <div class="a-icon">🏆</div>
+                  <div class="a-text"><strong>Leitor Nível 23</strong><small>Leia 15000 capítulos.</small></div>
+                </div>
+                <div class="a-item bronze">
+                  <div class="a-icon">📖</div>
+                  <div class="a-text"><strong>Colecionador Nível 1</strong><small>Tenha 1 obras na biblioteca.</small></div>
+                </div>
+                <div class="a-item bronze">
+                  <div class="a-icon">📖</div>
+                  <div class="a-text"><strong>Colecionador Nível 2</strong><small>Tenha 5 obras na biblioteca.</small></div>
+                </div>
+                <div class="a-item locked">
+                  <div class="a-icon">🔒</div>
+                  <div class="a-text"><strong>Leitor Nível 24</strong><small>Leia 15900 capítulos.</small></div>
+                </div>
+                <div class="a-item locked">
+                  <div class="a-icon">🔒</div>
+                  <div class="a-text"><strong>Leitor Nível 25</strong><small>Leia 16800 capítulos.</small></div>
+                </div>
+              </div>
+            </div>
+
             </div>
             <p>Sala de Troféus (RPG)</p>
           </div>
