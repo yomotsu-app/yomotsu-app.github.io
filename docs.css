@@ -1,6 +1,6 @@
 :root {
   --deep: #000000;
-  --panel: #102f31;
+  --panel: #0f0518;
   --coral: #ff00ff;
   --sand: #00f0ff;
   --paper: #ffffff;
@@ -53,18 +53,18 @@ h1 { margin: 0; font-size: clamp(2.6rem, 8vw, 4.8rem); line-height: 1; letter-sp
 .toc ul { columns: 2; margin-block: 0; }
 h2 { margin: 0 0 10px; font-size: 1.55rem; letter-spacing: -.025em; }
 h3 { margin: 24px 0 6px; font-size: 1.05rem; }
-p, li { color: #c3d1cf; }
+p, li { color: #a397b9; }
 code {
   padding: 2px 6px;
-  color: #fff5ed;
-  background: rgba(207, 101, 75, .22);
+  color: #ffffff;
+  background: rgba(255, 0, 255, .22);
   border-radius: 5px;
 }
 .note {
   margin-top: 18px;
   padding: 14px 16px;
-  color: #f0d6bd;
-  background: rgba(207, 101, 75, .12);
+  color: #ffffff;
+  background: rgba(255, 0, 255, .12);
   border-left: 3px solid var(--coral);
   border-radius: 6px;
 }
@@ -74,7 +74,7 @@ code {
   align-items: center;
   justify-content: space-between;
   gap: 24px;
-  color: #78928f;
+  color: #a397b9;
   border-top: 1px solid var(--line);
   font-size: .84rem;
 }
