@@ -93,6 +93,16 @@
       100% { border-color: rgba(226,183,141,0.28); box-shadow: 0 38px 80px rgba(0,0,0,0.33), 0 0 10px rgba(102,186,145,0.1); }
     }
     .reader { animation: neonBorder 4s infinite alternate ease-in-out; }
+
+    .faq{padding-block:115px 125px;border-top:1px solid var(--line)}
+    .faq-list{margin-top:60px;max-width:840px;display:flex;flex-direction:column;gap:16px}
+    details{background:rgba(16,47,49,.15);border:1px solid rgba(16,47,49,.3);border-radius:18px;overflow:hidden;transition:all .3s ease}
+    details:hover{background:rgba(16,47,49,.4);border-color:rgba(207,101,75,.2)}
+    summary{padding:26px 32px;font-weight:700;font-size:1.05rem;color:#f6eee3;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center}
+    summary::-webkit-details-marker{display:none}
+    summary::after{content:'+';font-size:1.8rem;color:var(--coral);transition:transform .3s;font-weight:300}
+    details[open] summary::after{transform:rotate(45deg);color:#66ba91}
+    details p{padding:0 32px 30px;margin:0;color:#91aaa7;line-height:1.75;font-size:.95rem;animation:fadeInUp .4s ease}
 </style>
 </head>
 <body>
@@ -108,8 +118,63 @@
     <section class="how shell" id="como-funciona"><p class="eyebrow"><i></i> Simples do começo ao fim</p><h2>Do capítulo original à leitura traduzida.</h2><div class="steps"><article class="step"><span class="num">01</span><div><h3>Abra o capítulo</h3><p>Leia normalmente pelo modo página ou webtoon.</p></div></article><article class="step"><span class="num">02</span><div><h3>Inicie a tradução</h3><p>O Yomotsu reconhece as falas com OCR.</p></div></article><article class="step"><span class="num">03</span><div><h3>Continue lendo</h3><p>O original é limpo e a tradução é ajustada automaticamente dentro do balão.</p></div></article></div></section>
     <section class="features" id="recursos"><div class="shell"><div class="wide"><div><p class="eyebrow"><i></i> Feito para quem quer apenas ler</p><h2>Mais contexto. Menos trabalho manual.</h2></div><p>O Yomotsu combina o leitor completo com ferramentas de tradução pensadas para quadrinhos.</p></div><div class="grid"><article class="card"><span>01</span><h3>OCR em quatro idiomas</h3><p>Reconhecimento de textos em inglês, japonês, coreano e chinês diretamente nas páginas.</p></article><article class="card"><span>02</span><h3>Cinco tradutores</h3><p>Escolha entre ML Kit, Google Tradutor, DeepL, Gemini e OpenRouter.</p></article><article class="card"><span>03</span><h3>Contexto e consistência</h3><p>Memória e glossário por obra ajudam a preservar diálogos, nomes e termos recorrentes.</p></article><article class="card"><span>04</span><h3>Balões bem preenchidos</h3><p>Linhas do mesmo balão são agrupadas e a tradução recebe tamanho, quebra, posição e contraste automáticos.</p></article><article class="card"><span>05</span><h3>Fundos adaptativos</h3><p>A limpeza acompanha balões claros, escuros ou coloridos e escolhe uma cor de texto legível.</p></article><article class="card"><span>06</span><h3>Correção individual</h3><p>Pressione um balão para editar ou retraduzir somente aquela fala no modo página ou webtoon.</p></article><article class="card"><span>07</span><h3>Leitor de Novels</h3><p>Leia webnovels com tradução automática, tipografia ajustável estilo Kindle e rolagem infinita.</p></article><article class="card"><span>08</span><h3>Nuvem Telegram</h3><p>Faça backup automático da sua biblioteca em seu canal do Telegram e libere memória local.</p></article><article class="card"><span>09</span><h3>Perfil Gamificado</h3><p>Ganhe XP lendo capítulos, desbloqueie títulos de prestígio e conquiste troféus incríveis.</p></article></div></div></section>
     <section class="engines shell"><p class="eyebrow"><i></i> Flexível por escolha</p><h2>Use o tradutor que funciona melhor para você.</h2><div class="engine-list"><span>ML Kit<small>No dispositivo</small></span><span>Google<small>Tradutor</small></span><span>DeepL<small>API Free ou Pro</small></span><span>Gemini<small>IA com API</small></span><span>OpenRouter<small>IA com API</small></span></div></section>
+    
+    <section class="faq shell" id="faq">
+      <p class="eyebrow"><i></i> Tire suas dúvidas</p>
+      <h2>Perguntas Frequentes</h2>
+      <div class="faq-list">
+        <details>
+          <summary>O Yomotsu é totalmente gratuito?</summary>
+          <p>Sim! O Yomotsu é um projeto open-source (código aberto) feito de fãs para fãs. Não há nenhum tipo de anúncio, assinatura premium ou limite de uso.</p>
+        </details>
+        <details>
+          <summary>Como funciona a leitura na Nuvem Telegram?</summary>
+          <p>Ao conectar um canal privado do seu Telegram, o Yomotsu usa os servidores ultra-rápidos deles como seu disco rígido pessoal. Você pode armazenar infinitos mangás lá e o Yomotsu faz o streaming (leitura ao vivo) sem baixar o arquivo pro seu celular, poupando 100% do seu armazenamento.</p>
+        </details>
+        <details>
+          <summary>Eu preciso pagar pela tradução por IA?</summary>
+          <p>Não obrigatoriamente. O Yomotsu já vem com o Google Tradutor e o ML Kit (que roda offline) embutidos e gratuitos. Se você quiser traduções hiper-avançadas usando Inteligência Artificial (como o Gemini ou ChatGPT), basta colocar a sua própria chave de API gratuita.</p>
+        </details>
+        <details>
+          <summary>Tem versão para iOS (iPhone/iPad)?</summary>
+          <p>No momento, o Yomotsu é exclusivo para dispositivos Android (versão 8.0 ou superior). Por causa das restrições e custos da loja da Apple, não há planos para uma versão iOS.</p>
+        </details>
+      </div>
+    </section>
+
     <section class="cta shell"><div><p class="eyebrow"><i></i> Pronto para começar</p><h2>Abra sua próxima leitura com o Yomotsu.</h2><p>Acesse a página de lançamentos e baixe o APK mais recente.</p></div><a class="button light" href="https://github.com/kiritsuguxs/Yomotsu-Oficial/releases/latest">Ver lançamentos ↗</a></section>
   </main>
   <footer class="footer shell"><a class="brand" href="#inicio"><img src="https://raw.githubusercontent.com/kiritsuguxs/Yomotsu-Oficial/refs/heads/main/app/src/main/res/drawable-nodpi/ic_yomotsu_logo.png" alt="" width="38" height="38"><span>Yomotsu</span></a><p>Leitor de mangás e novels com tradução automática integrada.</p><div><a href="./help.html">Ajuda</a><a href="./privacy.html">Privacidade</a><a href="https://github.com/kiritsuguxs/Yomotsu-Oficial">Código-fonte</a><a href="https://github.com/kiritsuguxs/Yomotsu-Oficial/blob/main/LICENSE">Licença</a></div></footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const reader = document.querySelector(".reader");
+      const s1 = document.querySelector(".s1");
+      const s2 = document.querySelector(".s2");
+      const status = document.querySelector(".status");
+      let isTranslated = true;
+      
+      reader.style.cursor = "pointer";
+      reader.title = "Clique para Traduzir!";
+      
+      reader.addEventListener("click", () => {
+        isTranslated = !isTranslated;
+        if (isTranslated) {
+          s1.innerHTML = 'Vamos continuar.<small>Texto traduzido</small>';
+          s2.innerHTML = 'Eu cuido disso!<small>Contexto preservado</small>';
+          status.innerHTML = 'Tradução ativa';
+          status.style.color = '#c9d9d5';
+          status.style.textShadow = '0 0 10px rgba(102,186,145,.5)';
+        } else {
+          s1.innerHTML = "Let's keep going.<small>Original text</small>";
+          s2.innerHTML = "I'll handle this!<small>Original text</small>";
+          status.innerHTML = 'Original (Inglês)';
+          status.style.color = '#91aaa7';
+          status.style.textShadow = 'none';
+        }
+      });
+    });
+  </script>
 </body>
+
 </html>
